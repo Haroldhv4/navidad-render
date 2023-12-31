@@ -1,0 +1,70 @@
+{% extends "./plantilla.html" %}
+{% block contenido %}
+<br>
+<div class="js-modal-overlay modal-overlay " data-modal-id="#modal-cart" style="display: none;"></div>
+<div class="mt-4">
+<section class="page-header" data-store="page-title">
+<div class="container">
+<div class="row">
+<div class="col text-center ">
+<h1 class="text-center h2 h1-md  text-md-left text-danger">Contacto</h1>
+</div>
+</div>
+</div>
+</section>
+<section class="contact-page">
+<div class="container">
+<div class="row justify-content-md-center">
+<div class="col-md-4">
+<ul class="contact-info">
+<li class="contact-item">
+<i class="fa-brands fa-whatsapp fa-xl"></i>
+<a href="https://wa.me/5491154811522" class="contact-link">5491154811522</a>
+</li>
+<li class="contact-item">
+<i class="fa-regular fa-envelope fa-xl"></i>
+<a href="/cdn-cgi/l/email-protection#fa8c9f948e9b89ba9f96889f839e9f969b949b8c939e9b9ed4999597" class="contact-link"><span class="__cf_email__" data-cfemail="d8aebdb6acb9ab98bdb4aabda1bcbdb4b9b6b9aeb1bcb9bcf6bbb7b5">ventas@elreydelanavidad.com</span></a>
+</li>
+<li class="contact-item">
+<i class="fa-regular fa-comments fa-xl"></i>
+<a target="_blank" href="https://decorarconluces.blogspot.com" class="contact-link">Visita nuestro Blog!</a>
+</li>
+</ul> </div>
+<div class="col-md-8">
+<form id="contact-form" action="/winnie-pooh" method="post" class="js-form form js-winnie-pooh-form mb-4" data-store="contact-form">
+<div class="winnie-pooh hidden">
+<label for="winnie-pooh">No completar este campo:</label>
+<input type="text" id="winnie-pooh" name="winnie-pooh">
+</div>
+<input type="hidden" value name="product" />
+<input type="hidden" name="type" value="contact" />
+<div class="form-group ">
+<label class="form-label " for="name">Nombre</label>
+<input type="text" id="name" class=" form-control  " autocorrect="off" autocapitalize="off" name="name" />
+</div>
+<div class="form-group ">
+<label class="form-label " for="email">Email</label>
+<input type="email" id="email" class=" form-control  " autocorrect="off" autocapitalize="off" name="email" />
+</div>
+<div class="form-group ">
+<label class="form-label " for="phone">Teléfono</label>
+<input type="tel" id="phone" class=" form-control  " autocorrect="off" autocapitalize="off" name="phone" />
+</div>
+<div class="form-group ">
+<label class="form-label " for="message">Mensaje</label>
+<textarea id="message" class="form-control form-control-area  " autocorrect="off" autocapitalize="off" name="message" rows="7"></textarea>
+</div>
+<button class="btn btn-primary btn-block" type="submit" value="Enviar" name="contact">
+Enviar
+<span class="js-form-spinner" style="display:none;">
+<svg class="icon-inline icon-spin h5"><use xlink:href="#circle-notch" /></svg>
+</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+<a href="https://wa.me/5491154811522" target="_blank" class="js-btn-fixed-bottom btn-whatsapp" aria-label="Comunicate por WhatsApp">
+<i class="fa-brands fa-whatsapp fa-xl"></i>
+</a>
+{% endblock %}

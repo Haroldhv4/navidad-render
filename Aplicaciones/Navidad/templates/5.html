@@ -1,0 +1,184 @@
+{% extends "./plantilla.html" %}
+{% block contenido %}
+<br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+              <div class="breadcrumbs  mb-md-0 text-center text-md-left">
+                <a class="crumb" href="//www.elreydelanavidad.com" title="El Rey de la Navidad">Inicio</a>
+                <span class="divider">&gt;</span>
+                <a class="crumb" href="#" title="AMBIENTACIONES LUMINOSAS">AMBIENTACIONES LUMINOSAS</a>
+                <span class="divider">&gt;</span>
+                <a class="crumb" href="{% url 'libreta' %}" title="Ambientaciones Luminosas">Ambientaciones Luminosas</a>
+                <span class="divider">&gt;</span>
+                <span class="crumb active">Carpa Led</span>
+              </div>
+              <br><br><br>
+                <div class="row">
+                    <h3>Filtrar por</h3>
+                </div>
+            </div>
+                       <div class="col-md-2">
+                          <div class="form-group mb-0">
+                            <select class="form-select js-sort-by font-weight-bold " aria-label="Ordenar por:">
+                              <option value="price-ascending">Precio: Menor a Mayor</option>
+                              <option value="price-descending">Precio: Mayor a Menor</option>
+                              <option value="alpha-ascending">A - Z</option>
+                              <option value="alpha-descending">Z - A</option>
+                              <option value="created-descending">Más Nuevo al más Viejo</option>
+                              <option value="created-ascending">Más Viejo al más Nuevo</option>
+                              <option value="best-selling">Más Vendidos</option>
+                              <option value="user" selected="">Destacado</option>
+                            </select>
+                            <div class="form-select-icon">
+                              <i class="fa-solid fa-arrow-up"></i>
+                              <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                          </div>
+                        </div>
+        </div>
+    </div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+          <h3>Precio</h3><br>
+          <div class="form-group">
+            <span class="js-filter-input-price-container filter-input-price-container">
+              <label class="form-label">Desde</label>
+              <input type="number" name="min_price" step="1" min="0" pattern="\d*" oninput="validity.valid||(value='');" class="js-price-filter-input form-control filter-input-price" data-component="list.filter-price.min" value="" placeholder="122.500">
+              <a class="js-price-filter-empty input-clear-content" style="display:none">
+              </a>
+            </span>
+            <span class="js-filter-input-price-container filter-input-price-container">
+              <label class="form-label">Hasta</label>
+              <input type="number" name="max_price" step="1" min="0" pattern="\d*" oninput="validity.valid||(value='');" class="js-price-filter-input form-control filter-input-price" data-component="list.filter-price.max" value="" placeholder="195.000">
+              <a class="js-price-filter-empty input-clear-content" style="display:none">
+              </a>
+            </span>
+            <button type="submit" class="js-price-filter-btn btn btn-secondary btn-small-extra btn-circle btn-icon chevron disabled" disabled="" data-component="list.filter-price.submit">Aplicar</button>
+          </div>
+        </div>
+
+        <div class="col">
+            <img src="https://acdn.mitiendanube.com/stores/102/344/products/ledbc011-70e55417babf6487f915122043099754-640-0.webp" class="img-fluid" alt="">
+            <h10>Guirnalda de 100 Luces Led 9mts aprox Blanco..
+                $9.239 <br>
+                3 cuotas sin interés <br>de $3.079,67</h10>
+        </div>
+
+        <div class="col">
+            <img src="https://acdn.mitiendanube.com/stores/102/344/products/plantilla-foto-recuperado1-6f3e326083fdff4f5216648527576600-640-0.webp" class="img-fluid" alt="">
+            <h10>Guirnalda de 100 Luces Led 9mts aprox Blanco Calido
+                $9.239 <br>
+                3 cuotas sin interés <br>de $3.079,67</h10>
+        </div>
+
+        <div class="col">
+            <img src="https://acdn.mitiendanube.com/stores/102/344/products/led-bc-cv-071-3513a815fdf120d58916933388898184-640-0.webp" class="img-fluid" alt="">
+            <h10>Guirnalda de 100 Luces Led 9mts aprox Blanco Calido
+                $9.239 <br>
+                3 cuotas sin interés <br>de $3.079,67</h10>
+        </div>
+
+        <div class="col">
+            <img src="https://acdn.mitiendanube.com/stores/102/344/products/ledbc031-177eed806e3df8468616148658865817-640-0.webp" class="img-fluid" alt="">
+            <h10>Guirnalda de 100 Luces Led 9mts aprox Blanco Calido
+                $9.239 <br>
+                3 cuotas sin interés <br>de $3.079,67</h10>
+        </div>
+    </div><br><br>
+
+    <div class="row">
+        <div class="col">
+            <h1></h1>
+        </div>
+        <div class="col">
+            <img src="https://acdn.mitiendanube.com/stores/102/344/products/rollo-50mt-04-ffd157ad0d5992938616648032704818-480-0.webp" class="img-fluid" alt="">
+            <h10>Guirnalda de 100 Luces Led 9mts aprox Blanco Calido
+                $9.239 <br>
+                3 cuotas sin interés <br>de $3.079,67</h10>
+        </div>
+        <div class="col">
+            <img src="https://acdn.mitiendanube.com/stores/102/344/products/ledmulti011-2a4dd6f56b8672a99215122050102260-480-0.webp" class="img-fluid" alt="">
+            <h10>Guirnalda de 100 Luces Led 9mts aprox Blanco Calido
+                $9.239 <br>
+                3 cuotas sin interés <br>de $3.079,67</h10>
+        </div>
+        <div class="col">
+            <img src="https://acdn.mitiendanube.com/stores/102/344/products/ledmulti021-16764dd5bcb159f36816148661741754-480-0.webp" class="img-fluid" alt="">
+            <h10>Guirnalda de 100 Luces Led 9mts aprox Blanco Calido
+                $9.239 <br>
+                3 cuotas sin interés <br>de $3.079,67</h10>
+        </div>
+        <div class="col">
+            <img src="https://acdn.mitiendanube.com/stores/102/344/products/50mt-mlt1-295d0ba4d9efa9f43a16650663523584-480-0.webp" class="img-fluid" alt="">
+            <h10>Guirnalda de 100 Luces Led 9mts aprox Blanco Calido
+                $9.239 <br>
+                3 cuotas sin interés <br>de $3.079,67</h10>
+        </div>
+    </div> <br><br>
+
+    <div class="row">
+        <div class="col">
+
+            <h1></h1>
+        </div>
+        <div class="col">
+            <img src=" https://acdn.mitiendanube.com/stores/102/344/products/prolongables-021-302a76f94f7520e30816648534287101-480-0.webp" class="img-fluid" alt="">
+            <h10>Guirnalda de 100 Luces Led 9mts aprox Blanco Calido
+                $9.239 <br>
+                3 cuotas sin interés <br>de $3.079,67</h10>
+        </div>
+        <div class="col">
+            <img src="https://acdn.mitiendanube.com/stores/102/344/products/ledbc031-177eed806e3df8468616148658865817-640-0.webp" class="img-fluid" alt="">
+            <h10>Guirnalda de 100 Luces Led 9mts aprox Blanco Calido
+                $9.239 <br>
+                3 cuotas sin interés <br>de $3.079,67</h10>
+        </div>
+        <div class="col">
+            <img src="https://acdn.mitiendanube.com/stores/102/344/products/ledbc031-177eed806e3df8468616148658865817-640-0.webp" class="img-fluid" alt="">
+            <h10>Guirnalda de 100 Luces Led 9mts aprox Blanco Calido
+                $9.239 <br>
+                3 cuotas sin interés <br>de $3.079,67</h10>
+        </div>
+        <div class="col">
+            <img src="https://acdn.mitiendanube.com/stores/102/344/products/ledbc031-177eed806e3df8468616148658865817-640-0.webp" class="img-fluid" alt="">
+            <h10>Guirnalda de 100 Luces Led 9mts aprox Blanco Calido
+                $9.239 <br>
+                3 cuotas sin interés <br>de $3.079,67</h10>
+        </div>
+    </div> <br><br>
+
+    <div class="row">
+        <div class="col">
+            <img src="" class="img-fluid" alt="">
+            <h1></h1>
+        </div>
+        <div class="col">
+            <img src="https://acdn.mitiendanube.com/stores/102/344/products/ledbc031-177eed806e3df8468616148658865817-640-0.webp" class="img-fluid" alt="">
+            <h10>Guirnalda de 100 Luces Led 9mts aprox Blanco Calido
+                $9.239 <br>
+                3 cuotas sin interés <br>de $3.079,67</h10>
+        </div>
+        <div class="col">
+            <img src="https://acdn.mitiendanube.com/stores/102/344/products/ledbc031-177eed806e3df8468616148658865817-640-0.webp" class="img-fluid" alt="">
+            <h10>Guirnalda de 100 Luces Led 9mts aprox Blanco Calido
+                $9.239 <br>
+                3 cuotas sin interés <br>de $3.079,67</h10>
+        </div>
+        <div class="col">
+            <img src="https://acdn.mitiendanube.com/stores/102/344/products/ledbc031-177eed806e3df8468616148658865817-640-0.webp" class="img-fluid" alt="">
+            <h10>Guirnalda de 100 Luces Led 9mts aprox Blanco Calido
+                $9.239 <br>
+                3 cuotas sin interés <br>de $3.079,67</h10>
+        </div>
+        <div class="col">
+            <img src="https://acdn.mitiendanube.com/stores/102/344/products/ledbc031-177eed806e3df8468616148658865817-640-0.webp" class="img-fluid" alt="">
+            <h10>Guirnalda de 100 Luces Led 9mts aprox Blanco Calido
+                $9.239 <br>
+                3 cuotas sin interés <br>de $3.079,67</h10>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
