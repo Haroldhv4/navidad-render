@@ -24,7 +24,7 @@ import os
 SECRET_KEY = os.environ.get('SECRET_KEY', default='sdfs66fs6d6f6ds6f6')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'RENDER' not in os environ
+DEBUG = 'RENDER' not in os.environ
 
 ALLOWED_HOSTS = []
 
