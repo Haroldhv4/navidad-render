@@ -1,5 +1,13 @@
 {% extends "./plantilla.html" %}
 {% block contenido %}
+<style media="screen">
+  .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+</style>
 <div class="mt-4">
 <section class="page-header" data-store="page-title">
 <div class="container">
@@ -17,7 +25,9 @@
 <table border="0" cellpadding="0" cellspacing="0" style="color: rgb(0, 0, 0); font-family: Tahoma, Geneva, sans-serif; font-size: 12px; line-height: normal; width: 1080px;" width="650">
 <tbody>
 <tr>
-<td align="center" colspan="3"><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/watch?v=Jpe8-mZXPkA" width="560"></iframe></td>
+  <div class="logo">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  </div>
 </tr>
 <tr>
 <td>&nbsp;</td>
